@@ -1,0 +1,12 @@
+export const data = [
+    { id: 1, name: 'Converse Black', size: 'Size: 5', price: '50', count: 1, image: 'https://images.unsplash.com/photo-1580065166709-18f61c2cd0ce?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=564&q=80'},
+    { id: 2, name: 'Nike Air Max Curry', size: 'Size: 10', price: '150', count: 1, image: 'https://images.unsplash.com/photo-1514989771522-458c9b6c035a?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1350&q=80'},
+    { id: 3, name: 'Monk Straps ', size: 'Size: 10.5', price: '115', count: 1, image: 'https://images.unsplash.com/photo-1533867617858-e7b97e060509?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80'},
+    { id: 4, name: 'Air Jordan Fire Red', size: 'Size: 8.5', price: '195', count: 1, image: 'https://images.unsplash.com/photo-1490168105446-f43395eb50b5?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1355&q=80'},
+    { id: 5, name: 'Vans Old-Skool', size: 'Size: 11', price: '65', count: 1, image: 'https://images.unsplash.com/photo-1532873626-62910b6145fb?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTk1fHxzaG9lc3xlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=60'},
+    { id: 6, name: 'Air Jordan Maroon', size: 'Size: 7', price: '210', count: 1, image: 'https://images.unsplash.com/photo-1508188239917-0fc5f653cb47?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80'},
+    { id: 7, name: 'Plain White Sneakers', size: 'Size: 8.5', price: '30', count: 1, image: 'https://images.unsplash.com/photo-1521410409201-2fcbcc0379ee?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1351&q=80'},
+    { id: 8, name: 'Yeezy Boost 350 V2', size: 'Size: 9', price: '200', count: 1, image: 'https://images.unsplash.com/photo-1488704906310-183eeda75d51?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80'},
+    { id: 9, name: 'New Balance X-90', size: 'Size: 7.5', price: '180', count: 1, image: 'https://images.unsplash.com/photo-1551107696-a4b0c5a0d9a2?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1300&q=80'}
+
+]
