@@ -11,7 +11,7 @@ import { Link } from 'react-router-dom';
 
 
 const NavBar = ({ totalItems }) =>{
-
+    // console.log('total items', totalItems)
     const classes = useStyles();
     return (
       <div className={classes.root}>

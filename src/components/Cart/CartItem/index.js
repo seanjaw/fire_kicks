@@ -7,7 +7,7 @@ import { Delete } from '@material-ui/icons';
 const CartItem = ({ item, onRemoveFromCart }) => {
     const classes = useStyles();
     const handleRemoveFromCart = () => onRemoveFromCart(item);
-
+    console.log('this is item', item)
     return (
         <TableRow className={classes.root} >
         <TableCell component="th" scope="row">

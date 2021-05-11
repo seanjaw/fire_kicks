@@ -9,6 +9,6 @@ export default makeStyles((theme) => ({
     padding: theme.spacing(3),
   },
   root: {
-    flexGrow: 1,
+    flexGrow: 1
   },
 }));
