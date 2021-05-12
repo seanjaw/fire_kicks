@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import Products from './components/Products/';
 import Navbar from './components/Navbar/';
 import Cart from './components/Cart';
+import Complete from './components/Complete';
 import { data } from './lib/data';
 
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
@@ -43,6 +44,10 @@ const App = () => {
         setCart(cart.filter((_, i) => i !== index));
     };
 
+    const handleEmptyCart = () =>{
+        setCart([])
+    }
+
     const checkItemExists = (id) => {
         const product = cart.find(item => item.id === id);
         return product 
@@ -61,7 +66,10 @@ const App = () => {
                     <Products products={products} onAddToCart={handleAddToCart}/>
                 </Route>
                 <Route exact path="/cart">
-                    <Cart cart={cart} onRemoveFromCart={handleRemoveFromCart}/>
+                    <Cart cart={cart} onRemoveFromCart={handleRemoveFromCart} onEmptyCart = {handleEmptyCart}/>
+                </Route>
+                <Route exact path="/complete">
+                    <Complete/>
                 </Route>
             </Switch>
         </Router>

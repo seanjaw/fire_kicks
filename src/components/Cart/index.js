@@ -10,12 +10,14 @@ import TableHead from '@material-ui/core/TableHead';
 import TableRow from '@material-ui/core/TableRow';
 import Paper from '@material-ui/core/Paper';
 import { Button } from '@material-ui/core';
-import Product from '../Products/Product';
 
-const Cart = ({ cart, onRemoveFromCart }) => {
+import { Link } from 'react-router-dom';
+
+const Cart = ({ cart, onRemoveFromCart, onEmptyCart }) => {
 
     let total = cart.reduce((a,b) => a + b.price*b.count, 0)
     const classes = useStyles();
+    const handleEmptyCart = () => onEmptyCart();
     const renderCart = () => (
         <>
             <TableContainer className={classes.root} component={Paper}>
@@ -36,14 +38,13 @@ const Cart = ({ cart, onRemoveFromCart }) => {
                 </TableBody>
             </Table>
             </TableContainer>
-            {/* <div className={classes.total}>Total: $1000</div> */}
             <div className={classes.total}>Total ${total}</div>
-            <Button variant="contained" className={classes.button}>Pay</Button>
+            <Button component={Link} to="/complete" onClick={handleEmptyCart} variant="contained" className={classes.button}>Pay</Button>
         </>
     )
 
     const renderEmptyCart = () => (
-        <div className={classes.empty}>Your Cart is Empty.</div>
+        <h1 className={classes.empty}>Your Cart is Empty.</h1>
       );
 
     return (
